@@ -12,9 +12,11 @@ class ApiClient {
     _dio = Dio(
       BaseOptions(
         baseUrl: AppConstants.apiBaseUrl,
-        connectTimeout: const Duration(seconds: 10),
-        receiveTimeout: const Duration(seconds: 10),
-        sendTimeout: const Duration(seconds: 10),
+        connectTimeout: const Duration(seconds: 15),
+        // The free hosting plan puts the API to sleep when idle and
+        // the first request can take about a minute to wake it up.
+        receiveTimeout: const Duration(seconds: 90),
+        sendTimeout: const Duration(seconds: 15),
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',

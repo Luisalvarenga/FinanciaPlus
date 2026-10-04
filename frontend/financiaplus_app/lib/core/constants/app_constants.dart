@@ -3,12 +3,15 @@ class AppConstants {
 
   static const String appName = 'FinanciaPlus';
 
-  /// Defaults to the backend on this machine. A phone or emulator
-  /// needs the address of the computer running the backend:
+  /// Defaults to the deployed API. To use a backend running on your
+  /// own machine, pass its address when starting the app:
   ///
-  ///   flutter run --dart-define=API_BASE_URL=http://192.168.1.10:8080
+  ///   flutter run --dart-define=API_BASE_URL=http://localhost:8080
+  ///
+  /// A phone or emulator needs the computer's network address
+  /// instead of localhost, for example http://192.168.1.10:8080.
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'http://localhost:8080',
+    defaultValue: 'https://financiaplus.onrender.com',
   );
 }

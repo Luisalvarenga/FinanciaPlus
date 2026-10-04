@@ -21,6 +21,9 @@ GoogleService-Info.plist
 # Machine-specific files
 local.properties
 
+# Packaged releases (published through GitHub Releases instead)
+dist/
+
 # Editors and operating system
 .idea/
 .vscode/
