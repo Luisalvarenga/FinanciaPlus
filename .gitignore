@@ -1,0 +1,32 @@
+# Each project keeps its own ignore rules:
+#   backend/.gitignore
+#   frontend/financiaplus_app/.gitignore
+
+# Credentials and local environment files
+.env
+.env.*
+!.env.example
+
+# Keys and certificates
+*.jks
+*.keystore
+*.pem
+*.p12
+*.pfx
+*.key
+key.properties
+google-services.json
+GoogleService-Info.plist
+
+# Machine-specific files
+local.properties
+
+# Editors and operating system
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/
