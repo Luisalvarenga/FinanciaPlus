@@ -1,17 +1,16 @@
-# financiaplus_app
+# App FinanciaPlus
 
-A new Flutter project.
+App Flutter para Android y Windows. Las instrucciones de ejecución, las cuentas de demostración y el resto de la documentación están en el [README principal](../../README.md).
 
-## Getting Started
+Arranque rápido:
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run -d windows
+```
 
-A few resources to get you started if this is your first Flutter project:
+Por defecto usa la API desplegada. Para apuntar a un backend local:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter run -d windows --dart-define=API_BASE_URL=http://localhost:8080
+```
